@@ -3,6 +3,33 @@ name = input("Welcome to Adventure Game! Please input your name: ")
 print("Hello,", name, "let's begin. . .")
 
 
+class Player():
+  def __init__(self, health, weapon):
+    self.health = health
+    self.weapon = weapon
+    self.inventory = {}
+  
+  def add_item(self, item):
+    if item in self.inventory:
+      self.inventory[item] += 1
+    else:
+      self.inventory[item] = 1
+
+  def remove_item(self, item):
+    if item in self.inventory:
+      self.inventory[item] -= 1
+      if self.inventory[item] < 0:
+        self.inventory[item] = 0
+    else:
+      print("Error: %s does not exist." % item)
+    
+    def damage(self, amount):
+      self.health -= amount
+      if self.health <= 0:
+        print(name, "unfortunately, you have died. You did not escape. Try again. . . if you dare. . .")
+        self.health = 0
+
+
 # Room 1 Example/Early stages. Each room will have its own function specific to it and will be called when approaching/entering each room
 print(name,", you awake in an unfamiliar room with seemingly random objects strewn about the small room around you. What do you do?")
 choice = input()
