@@ -29,7 +29,7 @@ class Player():
         print(name, "unfortunately, you have died. You did not escape. Try again. . . if you dare. . .")
         self.health = 0
 
-
+# the weapon class will keep track of the type or name of the current weapon being held by the player as well as the attack damage that the weapon has.
 class Weapon():
   def __init__(self, weapon_name, attack):
     self.weapon_name = weapon_name
@@ -70,7 +70,7 @@ else:
  
   rm1_choice = input("What do you do?: ")
 
-
+# the knife choice scenarios determine whether or not the player takes the knife as a weapon or tool for later in the game. The knife will be directly added to the inventory and assigned as the current player weapon if taken. If left on the desk, it will not be added to the inventory and may have lasting consequences in later rooms and encounters.
 if knife_choice == "yes":
   print("You stuggle to put away the blade of the knife but after some time you get it become loose again. The knife is useful now and may become useful in later situations. You place it in your back pocket and move on.")
   
