@@ -30,6 +30,15 @@ class Player():
         self.health = 0
 
 
+class Weapon():
+  def __init__(self, weapon_name, attack):
+    self.weapon_name = weapon_name
+    self.attack = attack
+
+
+# player = Player(name, 100, Weapon(weapon_name, 0))
+
+
 # Room 1 Example/Early stages. Each room will have its own function specific to it and will be called when approaching/entering each room
 print(name,", you awake in an unfamiliar room with seemingly random objects strewn about the small room around you. What do you do?")
 choice = input()
@@ -47,7 +56,7 @@ else:
 if rm1_choice == "check desk":
   print("The desk is cluttered with mostly crumpled up pieces of paper and notes filled with what seems like nonsense. After shuffling through the mess, you find a rusty pocket knife. It is difficult to move but it is still sharp and may become useful")
   
-  knife_choice = input("will you take the knife?: ")
+  knife_choice = input("Will you take the knife?: ")
 elif rm1_choice == "check the door behind me":
   print("The door is very heavily secured and is unable to open. You are not getting out this way. Try something else")
   
@@ -60,4 +69,18 @@ else:
   print("That action could not be done. Please try again")
  
   rm1_choice = input("What do you do?: ")
+
+
+if knife_choice == "yes":
+  print("You stuggle to put away the blade of the knife but after some time you get it become loose again. The knife is useful now and may become useful in later situations. You place it in your back pocket and move on.")
   
+  # player.append(Player(name, 100, Weapon("knife", 20)))
+  # player.add_item("knife")
+  rm1_choice = input("Now with the knife, what do you do?: ")
+elif knife_choice == "no":
+  print("You ponder the thought of taking the knife but ultimately choose to not take it. You place it back down on the desk, turning away. Out of sight, out of mind.")
+  
+  rm1_choice = input("Now without the knife, what do you do?: ")
+else:
+  print("That action could not be done. Please try again")
+  knife_choice = ("Will you take the knife?: ")
