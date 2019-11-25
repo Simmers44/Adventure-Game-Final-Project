@@ -63,7 +63,7 @@ elif rm1_choice == "check the door behind me":
   rm1_choice = input("What do you do?: ")
 elif rm1_choice == "check the right door":
   print("You approach the door on the right wall. The door is considerable large and may take some force to move it. You push hard on it and it opens easier than you thought. Your momentum makes you stumble and fall into another unfamiliar room.")
-elif rm1-choice == "check the left door":
+elif rm1_choice == "check the left door":
   print("You approach the door on the left wall. It looks worse for wear and could almost be broken if pushed too hard. You delicately puch on the door but nothing happens. You slowly increse pressure on the door but still nothing. You grow impatient and put your shoulder into your efforts and bust through the door. When looking back the door never actually opened, rather you broke right through the delapidated boards keeping it together. You made it through, an exciting and dangerous way but you made it. The door lead to another strange room.")
 else:
   print("That action could not be done. Please try again")
