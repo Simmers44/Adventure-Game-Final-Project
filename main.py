@@ -1,16 +1,14 @@
 import time
 
-# name (temporary variable name) will be used for the player's name throughout the entire code
+
 name = input("Welcome to Adventure Game! Please input your name: ")
 print("Hello,", name, "let's begin. . .")
 
 
-# Room 1 Example/Early stages. Each room will have its own function specific to it and will be called when approaching/entering each room
 def display_intro():
   print(name,", you awake in an unfamiliar room with seemingly random objects strewn about the small room around you.")
 
 
-# this choice will determine what the player will be doing at that time. At this point very little is possible here with only a few options available. Note: all choices must be written in lower case in order for the action to be read and enacted correctly.
 def intro_choice():
   correct_choice = "check surroundings"
   while True:
@@ -27,7 +25,7 @@ def intro_choice():
     else:
       print("That action could not be done. Please try again.")
 
-# the first room choice will allow the player to check certain things in their surroundings such as the desk and the three seperate doors in the room. By checking the desk, the player is given the opportunity to find their first weapon that can be either picked up or left at the desk. That decision regarding the knife will have consequences ;ater. Two of the doors lead to new rooms, thus creating the first branching path of the game.
+
 def room1_choice1():
   correct1_choice1 = "check desk"
   correct1_choice2 = "check back door"
