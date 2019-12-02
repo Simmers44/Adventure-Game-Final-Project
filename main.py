@@ -50,7 +50,7 @@ def room1_choice1():
       time.sleep(2)
       print("You are not getting out this way. Try something else")
     elif choice1 == correct1_choice3:
-      print("You approach the door on the right wall. The door is considerable large and may take some force to move it.")
+      print("You approach the door on the right wall. The door is considerably large and may take some force to move it.")
       time.sleep(2)
       print("You push hard on it and it opens easier than you thought.")
       time.sleep(2)
@@ -84,9 +84,34 @@ def right_room1():
       print("When looking around you see a bucket in the left corner and a singular door straight ahead.")
       time.sleep(2)
       print("Everything is very cleen in this room... very unusual.")
+      right1_room1()
       break
     else:
       print("That action could not be done. Please try again.")
+
+
+def right1_room1():
+  correctr_choice1 = "check bucket"
+  correctr_choice2 = "check door"
+  while True:
+    rchoice1 = input("What are you going to do?: ")
+    if rchoice1 == correctr_choice1:
+      print("You are unsure why a bucket is in here but it must be important")
+      time.sleep(2)
+      print("You approach the lone bucket and look inside.")
+      time.sleep(2)
+      print("Its empty?!")
+      time.sleep(2)
+      print("You are utterly confused and frustrated so you kick the bucket across the room.")
+      time.sleep(2)
+      print("Now that the bucket is gone, you see a note on the ground reading, 'You are almost out, KEEP GOING!'")
+    elif rchoice1 == correctr_choice2:
+      print("You quickly stride over to the door ahead of you.")
+      time.sleep(2)
+      print("The door is incredibly tall with tons of ornate features on it.")
+      time.sleep(2)
+      print("The details are almost scary and demonic in nature but knowing that in order to escape you must keep moving forward, you advance through the door.")
+      break
 
 
 display_intro()
