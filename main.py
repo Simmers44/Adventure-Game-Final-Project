@@ -89,6 +89,7 @@ def room1_choice1():
       time.sleep(2)
       print("Your momentum makes you stumble and fall into another unfamiliar room.")
       break
+      right_room1()
     elif choice1 == correct1_choice4:
       print("You approach the door on the left wall. It looks worse for wear and could almost be broken if pushed too hard.")
       time.sleep(2)
@@ -104,6 +105,22 @@ def room1_choice1():
       break
     else:
       print("That action could not be done. Please try again.")
+
+
+def right_room1():
+  correctr_choice = "check surroundings"
+  while True:
+    choice2 = input("What will you do now?: ")
+    if choice2 == correctr_choice:
+      print("You are in another strange room but this one is set up a little differently")
+      time.sleep(2)
+      print("When looking around you see a bucket in the left corner and a singular door straight ahead.")
+      time.sleep(2)
+      print("Everything is very cleen in this room... very unusual.")
+      break
+    else:
+      print("That action could not be done. Please try again.")
+
 
 display_intro()
 intro_choice()
