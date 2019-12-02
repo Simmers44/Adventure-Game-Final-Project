@@ -39,7 +39,12 @@ def room1_choice1():
       print("After shuffling through the mess, you find a rusty pocket knife.")
       time.sleep(2)
       print("It is difficult to move but it is still sharp and may become useful")
-      break
+      time.sleep(2)
+      print("You think for a minute and end up taking the knife.")
+      time.sleep(2)
+      print("You struggle to close the knife but eventually sccomplish your task")
+      time.sleep(2)
+      print("You put the knife in your pocket just in case you may need it in the future.")
     elif choice1 == correct1_choice2:
       print("The door is very heavily secured and is unable to open.")
       time.sleep(2)
@@ -50,8 +55,8 @@ def room1_choice1():
       print("You push hard on it and it opens easier than you thought.")
       time.sleep(2)
       print("Your momentum makes you stumble and fall into another unfamiliar room.")
-      break
       right_room1()
+      break
     elif choice1 == correct1_choice4:
       print("You approach the door on the left wall. It looks worse for wear and could almost be broken if pushed too hard.")
       time.sleep(2)
