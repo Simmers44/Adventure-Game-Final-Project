@@ -7,6 +7,7 @@ print("Hello,", name, "let's begin. . .")
 
 def display_intro():
   print(name,", you awake in an unfamiliar room with seemingly random objects strewn about the small room around you.")
+  intro_choice()
 
 
 def intro_choice():
@@ -21,6 +22,7 @@ def intro_choice():
       print("Directly behind you is a closed and heavily secured locked door blocking your way out from behind.")
       time.sleep(2)
       print("On both the left and right walls are singular doors, they seem to be unlocked.")
+      room1_choice1()
       break
     else:
       print("That action could not be done. Please try again.")
@@ -115,5 +117,3 @@ def right1_room1():
 
 
 display_intro()
-intro_choice()
-room1_choice1()
