@@ -178,6 +178,7 @@ def left1_room1():
       print("Whatever, at least you can pass through the door now.")
       time.sleep(2)
       print("You turn the dirty handle and the door opens to yet another room.")
+      left_room2()
       break
     else:
       print("That action could not be done. Please try again.")
@@ -212,9 +213,12 @@ def left_room2():
       time.sleep(2)
       print("You see water shooting out from broken sinks and toilets, new and used toilet paper strewn about everywhere, with feces smeared across the walls in the shape of foreign words and phrases.")
       time.sleep(2)
-      print("You are currently standing in a puddle and you are unsure if it is water or urine. . . and you choose never to find out for sure.")
+      print("There also does not seem to be any clear ways of getting out of this disgusting room either.")
       time.sleep(2)
-      print("After further investigation you see that there is a singular, pristine, bright white, clean as a whistle toilet in the middle of all the mess.")
+      print("Thinking it could not have possibly gotten any worse, you notice that you are currently standing in a puddle and you are unsure if it is water or urine. . . and you choose never to find out for sure.")
+      time.sleep(2)
+      print("After further investigation you see that there is a singular, pristine, bright white toilet in the middle of all the mess.")
+      left2_room2()
       break
     else:
       print("That action could not be done. Please try again.")
@@ -263,6 +267,51 @@ def right2_room2():
       print("With no better idea you decide to go to use the toilet.")
       time.sleep(2)
       print("Once you were done, you flushed the toilet and the wall next to you swings open to a long hallway.")
+      break
+    else:
+      print("That action could not be done. Please try again.")
+
+
+def left2_room2():
+  correctl2_choice1 = "check puddle"
+  correctl2_choice2 = "throw up"
+  correctl2_choice3 = "check toilet"
+  while True:
+    lchoice3 = input("What will you do?: ")
+    if lchoice3 == correctl2_choice1:
+      print("You look down at the puddle you are standing in and wonder what exactly it is.")
+      time.sleep(2)
+      print("You begin to try and find out but smartly decide not to.")
+      time.sleep(2)
+      print("Do not want to think about that, moving on")
+    elif lchoice3 == correctl2_choice2:
+      print("The vile smell of the room and all the unsightly things around you upset your stomache.")
+      time.sleep(2)
+      print("You start to gag but hold yourself back.")
+      time.sleep(2)
+      print("But wait, everything is already disgusting around you, so you just let it all out.")
+      time.sleep(2)
+      print("After a solid three minutes of throwing up, you get your bearings straight, clean yourself off and move on.")
+    elif lchoice3 == correctl2_choice3:
+      print("You dodge all the gross piles of human waste and debris on your way to the unusually clean toilet.")
+      time.sleep(2)
+      print("As you finally approach the toilet, and unsuprisingly, it looks like a regular, everyday toilet.")
+      time.sleep(2)
+      print("Its a nice toilet, no fancy, extra features, just your average commercial toilet, however it is extraordinarily clean.")
+      time.sleep(2)
+      print("With a straight face, you flush the toilet hoping something might happen.")
+      time.sleep(2)
+      print("*FLUSH*")
+      time.sleep(2)
+      print(". . .")
+      time.sleep(2)
+      print("Nothing happened.")
+      time.sleep(2)
+      print(". . .")
+      time.sleep(2)
+      print("All of a sudden, after moments of complete silence and confusion, the ground beneath your feet falls out from under you without any signs of a warning!")
+      time.sleep(2)
+      print("After landing from that fall, you look up to see a staircase leading up to a long hallway.")
       break
     else:
       print("That action could not be done. Please try again.")
