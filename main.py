@@ -44,7 +44,7 @@ def room1_choice1():
       time.sleep(2)
       print("You think for a minute and end up taking the knife.")
       time.sleep(2)
-      print("You struggle to close the knife but eventually sccomplish your task")
+      print("You struggle to close the knife but eventually accomplish your task")
       time.sleep(2)
       print("You put the knife in your pocket just in case you may need it in the future.")
     elif choice1 == correct1_choice2:
