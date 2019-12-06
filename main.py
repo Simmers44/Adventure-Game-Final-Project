@@ -1,7 +1,7 @@
 import time
 
 
-name = input("Welcome to Adventure Game! Please input your name: ")
+name = input("Welcome to The Doors Through the Unknown! Please input your name: ")
 print("Hello,", name, "let's begin. . .")
 
 
@@ -196,6 +196,56 @@ def right_room2():
       time.sleep(2)
       print("Given a further look, there is no door leading out of it except for the door leading to the bathroom.")
       break
+    else:
+      print("That action could not be done. Please try again.")
+
+
+def right2_room2():
+  correctr2_choice1 = "check bed"
+  correctr2_choice2 = "check tv"
+  correctr2_choice3 = "check lights"
+  correctr2_choice4 = "check bathroom"
+  while True:
+    rchoice5 = input("What will you do?: ")
+    if rchoice5 == correctr2_choice1:
+      print("Despite the unnerving nature of the room, you approach the bed.")
+      time.sleep(2)
+      print("Nothing seems out of place and the bed even seems to be very comfortable.")
+      time.sleep(2)
+      print("All the stress has gotten to you so you decided to take the risk and take a quick power nap.")
+      time.sleep(2)
+      print(". . .")
+      time.sleep(2)
+      print(". . .")
+      time.sleep(2)
+      print(". . .")
+      time.sleep(2)
+      print("You awake forty-five minutes later, relatively well rested and suprised nothing bad happened to you while you were resting.")
+    elif rchoice5 == correctr2_choice2:
+      print("You walk over to the T.V. and see only red static.")
+      time.sleep(2)
+      print("You find the remote and find only one channel that works.")
+      time.sleep(2)
+      print("The only channel that seems to be working is a news channel that is from another country with a language that is completely foreign to you.")
+      time.sleep(2)
+      print("You turn the T.V. off and move on.")
+    elif rchoice5 == correctr2_choice3:
+      print("The lights are shrouding the room in a red hue.")
+      time.sleep(2)
+      print("The light switch does not turn off the lights of the lamps and even unplugging it does nothing.")
+      time.sleep(2)
+      print("Confused, you just move on.")
+    elif rchoice5 == correctr2_choice4:
+      print("You walk towards the bathroom door and open it.")
+      time.sleep(2)
+      print("Like expected, it appears to be a normal bathroom with everything covered in red lights.")
+      time.sleep(2)
+      print("With no better idea you decide to go to use the toilet.")
+      time.sleep(2)
+      print("Once you were done, you flushed the toilet and the wall next to you swings open to a long hallway.")
+      break
+    else:
+      print("That action could not be done. Please try again.")
 
 
 display_intro()
