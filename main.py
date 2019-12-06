@@ -201,6 +201,25 @@ def right_room2():
       print("That action could not be done. Please try again.")
 
 
+def left_room2():
+  correctl2_choice = "check surroundings"
+  while True:
+    lchoice2 = input("What will you do now?: ")
+    if lchoice2 == correctl2_choice:
+      print("You did not know how it could get any worse than it was in the last room but you are quickly proven wrong.")
+      time.sleep(2)
+      print("This new room is an incredibly destroyed bathroom, with sinks broken, urinals smashed, walls with huge holes in them, and doors thrown off their hinges.")
+      time.sleep(2)
+      print("You see water shooting out from broken sinks and toilets, new and used toilet paper strewn about everywhere, with feces smeared across the walls in the shape of foreign words and phrases.")
+      time.sleep(2)
+      print("You are currently standing in a puddle and you are unsure if it is water or urine. . . and you choose never to find out for sure.")
+      time.sleep(2)
+      print("After further investigation you see that there is a singular, pristine, bright white, clean as a whistle toilet in the middle of all the mess.")
+      break
+    else:
+      print("That action could not be done. Please try again.")
+
+
 def right2_room2():
   correctr2_choice1 = "check bed"
   correctr2_choice2 = "check tv"
