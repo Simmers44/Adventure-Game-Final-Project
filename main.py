@@ -182,4 +182,19 @@ def left1_room1():
       print("That action could not be done. Please try again.")
 
 
+def right_room2():
+  correctr2_choice = "check surroundings"
+  while True:
+    if rchoice4 == correctr2_choice:
+      print("This new room catches you of guard.")
+      time.sleep(2)
+      print("The room looks like a hotel room with all the common things that you would find in a hotel room; a bed, a desk with a T.V. on it and a bathroom.")
+      time.sleep(2)
+      print("Despite the conventioanal nature of this room, everything is red; the lights, the T.V. screen, all the objects are bathed in an ominous red glow.")
+      time.sleep(2)
+      print("Given a further look, there is no door leading out of it except for the door leading to the bathroom.")
+      right2_room2()
+      break
+
+
 display_intro()
