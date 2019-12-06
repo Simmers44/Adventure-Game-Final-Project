@@ -64,7 +64,7 @@ def room1_choice1():
       time.sleep(2)
       print("You delicately push on the door but nothing happens.")
       time.sleep(2)
-      print("You slowly increse pressure on the door but still nothing.")
+      print("You slowly increase pressure on the door but still nothing.")
       time.sleep(2)
       print("You grow impatient and put your shoulder into your efforts and bust through the door.")
       time.sleep(2)
@@ -94,7 +94,7 @@ def right_room1():
 
 
 def left_room1():
-  correcrl_choice = "check surroundings"
+  correctl_choice = "check surroundings"
   while True:
     choice3 = input("What will you do now?: ")
     if choice3 == correctl_choice:
@@ -141,11 +141,11 @@ def right1_room1():
 
 def left1_room1():
   correctl_choice1 = "check trash"
-  correcrl_choice2 = "check chair"
+  correctl_choice2 = "check chair"
   correctl_choice3 = "check door"
   while True:
     lchoice1 = input("What are you going to do?: ")
-    if lchoice1 == rorrectl_choice1:
+    if lchoice1 == correctl_choice1:
       print("You incredibly slowly approach the rancid trash can.")
       time.sleep(2)
       print("You tell yourself it is not worth it and turn around and walk away.")
