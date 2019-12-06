@@ -71,6 +71,7 @@ def room1_choice1():
       print("When looking back the door never actually opened, rather you broke right through the delapidated boards keeping it together.")
       time.sleep(2)
       print("You made it through, an exciting and dangerous way but you made it and as it seems, the door lead to another strange room.")
+      left_room1()
       break
     else:
       print("That action could not be done. Please try again.")
@@ -90,6 +91,26 @@ def right_room1():
       break
     else:
       print("That action could not be done. Please try again.")
+
+
+def left_room1():
+  correcrl_choice = "check surroundings"
+  while True:
+    choice3 = input("What will you do now?: ")
+    if choice3 == correctl_choice:
+      print("As you look around in this new room, you seem confused.")
+      time.sleep(2)
+      print("This new room is somehow more in disarray than the last one.")
+      time.sleep(2)
+      print("The entire room is covered in papers with strange symbols scrawled upon them as well as on the walls surrounding you.")
+      time.sleep(2)
+      print("Taking a further look around you see that there is an overflowing trash can in the middle of the room, full of unsightly items, emanating a horid stentch.")
+      time.sleep(2)
+      print("Taking your eyes away from the trash, you also see an old arm chair that is ripped to shreds blocking a singular door out of the room.")
+      left1_room1()
+      break
+    else:
+       print("That action could not be done. Please try again.")
 
 
 def right1_room1():
@@ -114,6 +135,49 @@ def right1_room1():
       time.sleep(2)
       print("The details are almost scary and demonic in nature but knowing that in order to escape you must keep moving forward, you advance through the door.")
       break
+
+
+def left1_room1():
+  correctl_choice1 = "check trash"
+  correcrl_choice2 = "check chair"
+  correctl_choice3 = "check door"
+  while True:
+    lchoice1 = input("What are you going to do?: ")
+    if lchoice1 == rorrectl_choice1:
+      print("You incredibly slowly approach the rancid trash can.")
+      time.sleep(2)
+      print("You tell yourself it is not worth it and turn around and walk away.")
+      time.sleep(2)
+      print(". . .")
+      time.sleep(2)
+      print("You sigh and realize theres probably something important in the trash that might help you later so you turn back around and head back to the trash.")
+      time.sleep(2)
+      print("As you get closer the smell gets worse and worse.")
+      time.sleep(2)
+      print("You get to the trash and do not see anything useful right away so you begin to shuffle around in the unknown mush of disgust and utter filth.")
+      time.sleep(2)
+      print("After an uncalled for amount of time going through trash you find nothing and finaly throw up due to the horrible smells and texture of the trash itself.")
+      time.sleep(2)
+      print("You are so disappointed in yourself and happily move on.")
+    elif lchoice1 == correctl_choice2:
+      print("You approach the heavily torn chair.")
+      time.sleep(2)
+      print("Looking at the chair, you see many notes attached to it as well as a few notes inside the stuffing itself.")
+      time.sleep(2)
+      print("Most of the notes are scribbles or smeared with something you wish to forget about.")
+      time.sleep(2)
+      print("Of course, the last note you check is the one thats useful, with it reading, 'You are almost out, KEEP GOING!'")
+    elif lchoice1 == correctl_choice3:
+      print("You approach the door that is blocked by the chair.")
+      time.sleep(2)
+      print("You give a push to the chair but it breaks as you apply pressure.")
+      time.sleep(2)
+      print("Whatever, at least you can pass through the door now.")
+      time.sleep(2)
+      print("You turn the dirty handle and the door opens to yet another room.")
+      break
+    else:
+      print("That action could not be done. Please try again.")
 
 
 display_intro()
