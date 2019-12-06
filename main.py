@@ -135,6 +135,8 @@ def right1_room1():
       time.sleep(2)
       print("The details are almost scary and demonic in nature but knowing that in order to escape you must keep moving forward, you advance through the door.")
       break
+    else:
+      print("That action could not be done. Please try again.")
 
 
 def left1_room1():
