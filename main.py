@@ -71,6 +71,7 @@ def room1_choice1():
       print("When looking back the door never actually opened, rather you broke right through the delapidated boards keeping it together.")
       time.sleep(2)
       print("You made it through, an exciting and dangerous way but you made it and as it seems, the door lead to another strange room.")
+      left_room1()
       break
     else:
       print("That action could not be done. Please try again.")
@@ -90,6 +91,26 @@ def right_room1():
       break
     else:
       print("That action could not be done. Please try again.")
+
+
+def left_room1():
+  correcrl_choice = "check surroundings"
+  while True:
+    choice3 = input("What will you do now?: ")
+    if choice3 == correctl_choice:
+      print("As you look around in this new room, you seem confused.")
+      time.sleep(2)
+      print("This new room is somehow more in disarray than the last one.")
+      time.sleep(2)
+      print("The entire room is covered in papers with strange symbols scrawled upon them as well as on the walls surrounding you.")
+      time.sleep(2)
+      print("Taking a further look around you see that there is an overflowing trash can in the middle of the room, full of unsightly items, emanating a horid stentch.")
+      time.sleep(2)
+      print("Taking your eyes away from the trash, you also see an old arm chair that is ripped to shreds blocking a singular door out of the room.")
+      left1_room1()
+      break
+    else:
+       print("That action could not be done. Please try again.")
 
 
 def right1_room1():
@@ -114,6 +135,9 @@ def right1_room1():
       time.sleep(2)
       print("The details are almost scary and demonic in nature but knowing that in order to escape you must keep moving forward, you advance through the door.")
       break
+
+
+
 
 
 display_intro()
