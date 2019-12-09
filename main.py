@@ -433,6 +433,7 @@ def left_hallway1():
       print("You turn to your right and face the door ahead of you.")
       time.sleep(2)
       print("You turn the handle and proceed through the door into yet another room, and unsuprisingly, this next room is destroyed.")
+      r_left_room()
       break
     elif lhallway1 == correctlh_choice3:
       print("You turn to your left and face the door ahead of you.")
@@ -474,6 +475,28 @@ def l_right_room():
       print("The area is full of friendly wildlife and a park bench near the pond.")
       time.sleep(2)
       print("You are relieved to finally have a moment of peace in this strenuous adventure.")
+      break
+    else:
+      print("That action could not be done. Please try again.")
+
+
+def r_left_room():
+  rcorrectl_choice = "check surroundings"
+  while True:
+    leftchoicer = input("What do you do?: ")
+    if leftchoicer == rcorrectl_choice:
+      print("You step through the door on the right wall and see what can only be described as a disaster.")
+      time.sleep(2)
+      print("The area looks as though an explosion occured, leaving a large crater in the center of this rather large room.")
+      time.sleep(2)
+      print("Large symbols are drawn all over the walls in different shades of red and brown.")
+      time.sleep(2)
+      print("One can only assume what the symbols are drawn in.")
+      time.sleep(2)
+      print("You notice something strange lying in the crater and give a closer look.")
+      time.sleep(2)
+      print("You notice that in the center of the crater is a blown open safe covered in strange symbols and drawings in what looks like blood.")
+      print("Across from you is a door with a ladder leading out of the crater to the door.")
       break
     else:
       print("That action could not be done. Please try again.")
