@@ -353,6 +353,7 @@ def left_hallway():
       print("You just close your eyes and run straight forward until you smack into the wall at the end of the hallway.")
       time.sleep(2)
       print("After getting your bearings straight, you notice a note on the ground, face down between two doors, one leading right, one leading left.")
+      left_hallway1()
       break
     else:
       print("That action could not be done. Please try again.")
@@ -393,6 +394,48 @@ def right_hallway1():
       print("You turn to your left and face the door ahead of you.")
       time.sleep(2)
       print("You turn the handle and proceed through the door into yet another room, however this one actually comforts you.")
+      break
+    else:
+      print("That action could not be done. Please try again.")
+
+
+def left_hallway1():
+  correctlh_choice1 = "check note"
+  correctlh_choice2 = "check right door"
+  correctlh_choice3 = "check left door"
+  while True:
+    lhallway1 = input("What should you do?: ")
+    if lhallway1 == correctlh_choice1:
+      print("You push away the fish corpses to fully see the note on the ground.")
+      time.sleep(2)
+      print("You bend down and pick up the note.")
+      time.sleep(2)
+      print("Now standing back up, you flip over the note and begin to read it.")
+      time.sleep(2)
+      print("The note reads, 'You are only three rooms away from escaping,", name,"! You can do it... if you are lucky.'")
+      time.sleep(2)
+      print("You are shocked!")
+      time.sleep(2)
+      print("After reading this, tons of questions flood your brain.")
+      time.sleep(2)
+      print("How do they know your name?")
+      time.sleep(2)
+      print("Why do they know your name?")
+      time.sleep(2)
+      print("Who even are they?")
+      time.sleep(2)
+      print("Are they the ones that put you here?")
+      time.sleep(2)
+      print("This note angers you and knowing how close you are it causes an overflow of determination and you move on.")
+    elif lhallway1 == correctlh_choice2:
+      print("You turn to your right and face the door ahead of you.")
+      time.sleep(2)
+      print("You turn the handle and proceed through the door into yet another room, and unsuprisingly, this next room is destroyed.")
+      break
+    elif lhallway1 == correctlh_choice3:
+      print("You turn to your left and face the door ahead of you.")
+      time.sleep(2)
+      print("You turn the handle and proceed through the door into yet another room, and this one is the strangest one yet.")
       break
     else:
       print("That action could not be done. Please try again.")
