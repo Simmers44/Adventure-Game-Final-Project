@@ -462,4 +462,20 @@ def r_right_room():
       print("That action could not be done. Please try again.")
 
 
+def l_right_room():
+  lcorrectr_choice = "check surroundings"
+  while True:
+    rightchoicel = input("What do you do?: ")
+    if rightchoicel == lcorrectr-choice:
+      print("You step through the doorway into a conforting environment.")
+      time.sleep(2)
+      print("The area around you appears to be a small park area with a pond in the middle.")
+      time.sleep(2)
+      print("The area is full of friendly wildlife and a park bench near the pond.")
+      time.sleep(2)
+      print("You are relieved to finally have a moment of peace in this strenuous adventure.")
+    else:
+      print("That action could not be done. Please try again.")
+
+
 display_intro()
