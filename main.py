@@ -389,11 +389,13 @@ def right_hallway1():
       print("You turn to your right and face the door ahead of you.")
       time.sleep(2)
       print("You turn the handle and proceed through the door into yet another room, however this one concerns you.")
+      r_right_room()
       break
     elif rhallway1 == correctrh_choice3:
       print("You turn to your left and face the door ahead of you.")
       time.sleep(2)
       print("You turn the handle and proceed through the door into yet another room, however this one actually comforts you.")
+      l_right_room()
       break
     else:
       print("That action could not be done. Please try again.")
@@ -436,6 +438,25 @@ def left_hallway1():
       print("You turn to your left and face the door ahead of you.")
       time.sleep(2)
       print("You turn the handle and proceed through the door into yet another room, and this one is the strangest one yet.")
+      break
+    else:
+      print("That action could not be done. Please try again.")
+
+
+def r_right_room():
+  rcorrectr_choice = "check surroundings"
+  while True:
+    rightchoicer = input("What do you do?: ")
+    if rightchoicer == rcorrectr_choice:
+      print("As you step into this new room, you are concerned instantly by how recognizable it is.")
+      time.sleep(2)
+      print("You notice right away that this room looks like of your childhood bedroom.")
+      time.sleep(2)
+      print("The walls are covered in movie and band posters however, one poster seems to not be fully stuck to the wall.")
+      time.sleep(2)
+      print("Continuing to look around, you see your old toys everywhere.")
+      time.sleep(2)
+      print("There is a strange line of toys leading to your bed and it seems like someone, or something is laying under the covers.")
       break
     else:
       print("That action could not be done. Please try again.")
