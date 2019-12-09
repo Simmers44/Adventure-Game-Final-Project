@@ -439,6 +439,7 @@ def left_hallway1():
       print("You turn to your left and face the door ahead of you.")
       time.sleep(2)
       print("You turn the handle and proceed through the door into yet another room, and this one is the strangest one yet.")
+      l_left_room()
       break
     else:
       print("That action could not be done. Please try again.")
@@ -497,6 +498,25 @@ def r_left_room():
       time.sleep(2)
       print("You notice that in the center of the crater is a blown open safe covered in strange symbols and drawings in what looks like blood.")
       print("Across from you is a door with a ladder leading out of the crater to the door.")
+      break
+    else:
+      print("That action could not be done. Please try again.")
+
+
+def l_left_room():
+  lcorrectl_choice = "check surroundings"
+  while True:
+    leftchoicel = input("What do you do?: ")
+    if leftchoicel == lcorrectl_choice:
+      print("You advance through the left door into utter confusion.")
+      time.sleep(2)
+      print("For once, the room is not a mess and only contains a door on the right wall and a huge, singular object in the middle of the room.")
+      time.sleep(2)
+      print("The object in the room is a humongous pink teddy bear with a creepy smile stretching from ear to ear with pink and purple jewels for eyes.")
+      time.sleep(2)
+      print("The bear has to be at least sixty feet tall.")
+      time.sleep(2)
+      print("The creepiest part is that it is hunched over such that it is staring right at you as you are standing in the doorway.")
       break
     else:
       print("That action could not be done. Please try again.")
