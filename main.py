@@ -267,6 +267,7 @@ def right2_room2():
       print("With no better idea you decide to go to use the toilet.")
       time.sleep(2)
       print("Once you were done, you flushed the toilet and the wall next to you swings open to a long hallway.")
+      right_hallway()
       break
     else:
       print("That action could not be done. Please try again.")
@@ -312,6 +313,23 @@ def left2_room2():
       print("All of a sudden, after moments of complete silence and confusion, the ground beneath your feet falls out from under you without any signs of a warning!")
       time.sleep(2)
       print("After landing from that fall, you look up to see a staircase leading up to a long hallway.")
+      break
+    else:
+      print("That action could not be done. Please try again.")
+
+
+def right_hallway():
+  correctrh_choice = "check surroundings"
+  while True:
+    rhallway = input("What will you do?: ")
+    if rhallway == correctrh_choice:
+      print("The hallway you find yourself in is incredibly long and pretty unnerving.")
+      time.sleep(2)
+      print("The walls around you are solid concrete with nothing on them.")
+      time.sleep(2)
+      print("The floor beneathe you is so smoothe you can almost see your reflection in it.")
+      time.sleep(2)
+      print("You eventually reach the end of this mesmerizing hallway where you encounter yet another note, face down between two doors, one leading right, one leading left.")
       break
     else:
       print("That action could not be done. Please try again.")
