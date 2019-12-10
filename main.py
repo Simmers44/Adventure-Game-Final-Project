@@ -500,6 +500,7 @@ def r_left_room():
       time.sleep(2)
       print("You notice that in the center of the crater is a blown open safe covered in strange symbols and drawings in what looks like blood.")
       print("Across from you is a door with a ladder leading out of the crater to the door.")
+      r_left_room1()
       break
     else:
       print("That action could not be done. Please try again.")
@@ -592,6 +593,58 @@ def l_right_room1():
       print("You walk over to the park bench and sit down to think.")
       time.sleep(2)
       print("As you lean back in your seat, the whole bench leans back and sets a mechanism in motion that opens a passageway out of this room into yet another unfamiliar room.")
+      break
+    else:
+      print("That action could not be done. Please try again.")
+
+
+def r_left_room1():
+  rcorrectl_choice1 = "check safe"
+  rcorrectl_choice2 = "check door"
+  while True:
+    leftchoicer1 = input("What will you do?: ")
+    if leftchoicer1 == rcorrectl_choice1:
+      print("You walk towards the edge of the crater, trying to find a safe way down to the bottom.")
+      time.sleep(2)
+      print("You are unsure about your decision but decide to keep going anyway.")
+      time.sleep(2)
+      print("Right after you start your careful descent, some unsolid ground beneathe you gives away.")
+      time.sleep(2)
+      print("You are sent barrelling down the decline, hitting the ground hard over and over again.")
+      time.sleep(2)
+      print("You tumble down for two minutes until settling down at the bottom.")
+      time.sleep(2)
+      print("The fall knocked the breath out from you so you struggle to breathe for a few seconds.")
+      time.sleep(2)
+      print("Finally catching your breath, you stand up and walk a couple feet to the cracked open safe.")
+      time.sleep(2)
+      print("You swing open the safe door frustrated and find nothing in it.")
+      time.sleep(2)
+      print("Angry that you hurt yourself for no reason you yell at the top of your lungs and kick the safe as hard as you could.")
+      time.sleep(2)
+      print("The safe does not move a single inch and your foot throbs in pain from the intense kick.")
+      time.sleep(2)
+      print("Ypu reel in pain for a while until you could stand and move on.")
+    elif leftchoicer1 == rcorrectl_choice2:
+      print("You walk over to the tall ladder leaning against the incredibly steep edge of the crater.")
+      time.sleep(2)
+      print("You grab the ladder about to climb but you are frozen in fear.")
+      time.sleep(2)
+      print("There is no way to brace the bottom of the ladder so you second guess your decision.")
+      time.sleep(2)
+      print("Realizing there is no other way out, you start to climb towards the door at the top.")
+      time.sleep(2)
+      print("Suprisingly, the climb is more stable as you thought.")
+      time.sleep(2)
+      print("As you get to the top the ladder begins to fall away from the edge of the crater.")
+      time.sleep(2)
+      print("You act quickly, spinning around to the other side of the falling ladder.")
+      time.sleep(2)
+      print("Now on the other side of the ladder, you leap to the edge of the crater, barely clinging on to the lip of it.")
+      time.sleep(2)
+      print("You eventually pull yourself up to the top, looking at the ladder as it crashes in pieces as it hits the ground.")
+      time.sleep(2)
+      print("You calm yourself down and walk through the door into another room.")
       break
     else:
       print("That action could not be done. Please try again.")
