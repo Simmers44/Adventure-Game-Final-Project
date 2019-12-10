@@ -459,6 +459,7 @@ def r_right_room():
       print("Continuing to look around, you see your old toys everywhere.")
       time.sleep(2)
       print("There is a strange line of toys leading to your bed and it seems like someone, or something is laying under the covers.")
+      r_right_room1()
       break
     else:
       print("That action could not be done. Please try again.")
@@ -517,6 +518,55 @@ def l_left_room():
       print("The bear has to be at least sixty feet tall.")
       time.sleep(2)
       print("The creepiest part is that it is hunched over such that it is staring right at you as you are standing in the doorway.")
+      break
+    else:
+      print("That action could not be done. Please try again.")
+
+
+def r_right_room1():
+  rcorrectr_choice1 = "play"
+  rcorrectr_choice2 = "check bed"
+  rcorrectr_choice3 = "check poster"
+  while True:
+    rightchoicer1 = input("What will you do?: ")
+    if rightchoicer1 == rcorrectr_choice1:
+      print("You have a sudden uncontrollable urge to get down on the ground, pick up some toys and play!")
+      time.sleep(2)
+      print("You make a lot of noises while you are playing and it is quite adorable.")
+      time.sleep(2)
+      print("A few minutes of pure fun later, you stand up from the floor and move on.")
+    elif rightchoicer1 == rcorrectr_choice2:
+      print("You see the very clear line of toys leading to the bed and decide to follow it.")
+      time.sleep(2)
+      print("You slowly approach the bed, following the path of toys, keeping your eyes locked on the thing in your bed.")
+      time.sleep(2)
+      print("As you draw nearer, you become frightened to find what may be hiding under the blankets so you look for a weapon.")
+      time.sleep(2)
+      print("You reach for the pocket knife but you do not feel it.")
+      time.sleep(2)
+      print("You think to yourself and figure that it must have fallen out of your pocket earlier in your adventure.")
+      time.sleep(2)
+      print("You think fast and grab a toy lightsaber as your weapon... hey, it is better than nothing, may the force be with you.")
+      time.sleep(2)
+      print("You nervously step toward the bed, weapon in hand.")
+      time.sleep(2)
+      print("You slowly grip the blanket and rip it off while at the same time swinging the lightsaber down on the creature.")
+      time.sleep(2)
+      print("The blade hits with a distinct *SQUEEK*.")
+      time.sleep(2)
+      print("You are confused and look down to see a stuffed bear.")
+      time.sleep(2)
+      print("You are very embarassed, throwing the bear across the room, turning your back and moving on.")
+    elif rightchoicer1 == rcorrectr_choice3:
+      print("You notice that the poster is not fully attached to the wall and choose to investigate it.")
+      time.sleep(2)
+      print("You notice that the poster is covering something as you get closer to it.")
+      time.sleep(2)
+      print("You peel off the poster to see a hole large enough to crawl through.")
+      time.sleep(2)
+      print("The hole stretches into another room.")
+      time.sleep(2)
+      print("Knowing it is one step closer to getting out of here, you crawl in and advance in your travels.")
       break
     else:
       print("That action could not be done. Please try again.")
