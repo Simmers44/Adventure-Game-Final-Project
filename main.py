@@ -520,6 +520,7 @@ def l_left_room():
       print("The bear has to be at least sixty feet tall.")
       time.sleep(2)
       print("The creepiest part is that it is hunched over such that it is staring right at you as you are standing in the doorway.")
+      l_left_room1()
       break
     else:
       print("That action could not be done. Please try again.")
@@ -645,6 +646,34 @@ def r_left_room1():
       print("You eventually pull yourself up to the top, looking at the ladder as it crashes in pieces as it hits the ground.")
       time.sleep(2)
       print("You calm yourself down and walk through the door into another room.")
+      break
+    else:
+      print("That action could not be done. Please try again.")
+
+
+def l_left_room1():
+  lcorrectl_choice1 = "check bear"
+  lcorrectl_choice2 = "check door"
+  while True:
+    leftchoicel1 = input("What will you do?: ")
+    if leftchoicel1 == lcorrectl_choice1:
+      print("You walk toward the giant bear, confused and frightened.")
+      time.sleep(2)
+      print("You are nervous that it is staring at you with that creepy smile.")
+      time.sleep(2)
+      print("You nudge the bear and nothing happens.")
+      time.sleep(2)
+      print("For once, you are relieve that nothing happened and happily move on from this creepy bear.")
+    elif leftchoicel1 == lcorrectl_choice2:
+      print("You walk past the bear towards the door.")
+      time.sleep(2)
+      print("Nothing happens to you, you just walk to the door with no trouble.")
+      time.sleep(2)
+      print("As you start to step through the door you look backward at the bear and notice that the bear is now turned towards you, staring back at you.")
+      time.sleep(2)
+      print("Extremely scared, you sprint through the door, slamming it behind you.")
+      time.sleep(2)
+      print("you once again find yourself in a new room.")
       break
     else:
       print("That action could not be done. Please try again.")
