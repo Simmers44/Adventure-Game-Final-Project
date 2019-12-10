@@ -477,6 +477,7 @@ def l_right_room():
       print("The area is full of friendly wildlife and a park bench near the pond.")
       time.sleep(2)
       print("You are relieved to finally have a moment of peace in this strenuous adventure.")
+      l_right_room1()
       break
     else:
       print("That action could not be done. Please try again.")
@@ -567,6 +568,30 @@ def r_right_room1():
       print("The hole stretches into another room.")
       time.sleep(2)
       print("Knowing it is one step closer to getting out of here, you crawl in and advance in your travels.")
+      break
+    else:
+      print("That action could not be done. Please try again.")
+
+
+def l_right_room1():
+  lcorrectr_choice1 = "check pond"
+  lcorrectr_choice2 = "check bench"
+  while True:
+    rightchoicel1 = input("What will you do?: ")
+    if rightchoicel1 == lcorrectr_choice1:
+      print("You calmly stroll through the peaceful area towards a small pond.")
+      time.sleep(2)
+      print("As you look around you take a sigh of relief while admiring the many small animals around you.")
+      time.sleep(2)
+      print("You look into the pond and see a variety of fish from al shapes and sizes as well as some small turtles.")
+      time.sleep(2)
+      print("This sight makes you smile but you realize that you must keep moving and decide to move on.")
+    elif rightchoicel1 == lcorrectr_choice2:
+      print("You can not find any signs of escape out of this room so you decide to take a break for a while.")
+      time.sleep(2)
+      print("You walk over to the park bench and sit down to think.")
+      time.sleep(2)
+      print("As you lean back in your seat, the whole bench leans back and sets a mechanism in motion that opens a passageway out of this room into yet another unfamiliar room.")
       break
     else:
       print("That action could not be done. Please try again.")
