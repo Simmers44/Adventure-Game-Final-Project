@@ -570,6 +570,7 @@ def r_right_room1():
       print("The hole stretches into another room.")
       time.sleep(2)
       print("Knowing it is one step closer to getting out of here, you crawl in and advance in your travels.")
+      r_right2_room()
       break
     else:
       print("That action could not be done. Please try again.")
@@ -674,6 +675,27 @@ def l_left_room1():
       print("Extremely scared, you sprint through the door, slamming it behind you.")
       time.sleep(2)
       print("you once again find yourself in a new room.")
+      break
+    else:
+      print("That action could not be done. Please try again.")
+
+
+def r_right2_room():
+  rcorrectr2_choice = "check surroundings"
+  while True:
+    rightchoicer2 = input("What will you do now?: ")
+    if rightchoicer2 == rcorrectr2_choice:
+      print("You reach the end of the tunnel and fall out head first into the next room.")
+      time.sleep(2)
+      print("The hole in the wall is pretty high up and you land right on your head because the fall was so quick and so sudden that you were unable to brace your fall with your hands.")
+      time.sleep(2)
+      print("You land hard but your fall is easily absorbed by a very soft ground")
+      time.sleep(2)
+      print("You are thankful that it broke your fall and you give a better look around and you see that you are in a white padded room like those found in an insane asylum.")
+      time.sleep(2)
+      print("Everything is so bright that you feel like you might go insane.")
+      time.sleep(2)
+      print("Theres an empty straightjacket in the corner near a door that is thankfully, slightly open.")
       break
     else:
       print("That action could not be done. Please try again.")
