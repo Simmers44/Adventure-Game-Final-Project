@@ -699,6 +699,7 @@ def r_right2_room():
       print("Everything is so bright that you feel like you might go insane.")
       time.sleep(2)
       print("Theres an empty straightjacket in the corner near a door that is thankfully, slightly open.")
+      r_right2_room2()
       break
     else:
       print("That action could not be done. Please try again.")
@@ -758,6 +759,38 @@ def l_left2_room():
       print("The whole room is empty except for the mirrors and a single door straight ahead of you.")
       time.sleep(2)
       print("Once again, you are very puzzled by the room you are in.")
+      break
+    else:
+      print("That action could not be done. Please try again.")
+
+
+def r_right2_room2():
+  rcorrectr2_choice1 = "check straightjacket"
+  rcorrectr2_choice2 = "check door"
+  while True:
+    rightchoicer3 = input("What do you do?: ")
+    if rightchoicer3 == rcorrectr2_choice1:
+      print("You walk over to the straightjacket on the floor.")
+      time.sleep(2)
+      print("Every step you take squishes into the pads and you have touble keeping your balance.")
+      time.sleep(2)
+      print("After struggling walking over, you finally reach the jacket.")
+      time.sleep(2)
+      print("You realize that you have never actually seen a straight jacket in person before so you decide to take a closer look.")
+      time.sleep(2)
+      print("You pick up the jacket and admire the craftmanship.")
+      time.sleep(2)
+      print("As you are holding the jacket you spin it around to look at the back and you see that the places where the sleeves are held at the back is broken.")
+      time.sleep(2)
+      print("The amount of strength that it would take to break a straightjacket is insane, pun not intended.")
+      time.sleep(2)
+      print("Slightly shocked you drop the jacket back where you found it and move on.")
+    elif rightchoicer3 == rcorrectr2_choice2:
+      print("You carefully step over towards the door across the room.")
+      time.sleep(2)
+      print("Walking on the padded floor is still difficult but you manage to reach your destination.")
+      time.sleep(2)
+      print("You push the heavy door open and step through the doorway.")
       break
     else:
       print("That action could not be done. Please try again.")
