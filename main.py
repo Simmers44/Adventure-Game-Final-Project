@@ -1,15 +1,17 @@
 import time
 
-
+# name variable for the player's name
 name = input("Welcome to The Doors Through the Unknown! Please input your name: ")
 print("Hello,", name, "let's begin. . .")
 
 
+# displays the introduction for the beginning room
 def display_intro():
   print(name,", you awake in an unfamiliar room with seemingly random objects strewn about the small room around you.")
   intro_choice()
 
 
+# the intro to the beginning room
 def intro_choice():
   correct_choice = "check surroundings"
   while True:
@@ -28,6 +30,7 @@ def intro_choice():
       print("That action could not be done. Please try again.")
 
 
+# the choices for the beginning room
 def room1_choice1():
   correct1_choice1 = "check desk"
   correct1_choice2 = "check back door"
@@ -77,6 +80,7 @@ def room1_choice1():
       print("That action could not be done. Please try again.")
 
 
+# intro for the first right room
 def right_room1():
   correctr_choice = "check surroundings"
   while True:
@@ -93,6 +97,7 @@ def right_room1():
       print("That action could not be done. Please try again.")
 
 
+#intro for the first left room
 def left_room1():
   correctl_choice = "check surroundings"
   while True:
@@ -113,6 +118,7 @@ def left_room1():
        print("That action could not be done. Please try again.")
 
 
+# the choices for the first right room
 def right1_room1():
   correctr_choice1 = "check bucket"
   correctr_choice2 = "check door"
@@ -140,6 +146,7 @@ def right1_room1():
       print("That action could not be done. Please try again.")
 
 
+# the choices for the first left room
 def left1_room1():
   correctl_choice1 = "check trash"
   correctl_choice2 = "check chair"
@@ -184,6 +191,7 @@ def left1_room1():
       print("That action could not be done. Please try again.")
 
 
+# intro for the second right room
 def right_room2():
   correctr2_choice = "check surroundings"
   while True:
@@ -202,6 +210,7 @@ def right_room2():
       print("That action could not be done. Please try again.")
 
 
+# intro for the second left room
 def left_room2():
   correctl2_choice = "check surroundings"
   while True:
@@ -224,6 +233,7 @@ def left_room2():
       print("That action could not be done. Please try again.")
 
 
+# choices for the second right room
 def right2_room2():
   correctr2_choice1 = "check bed"
   correctr2_choice2 = "check tv"
@@ -273,6 +283,7 @@ def right2_room2():
       print("That action could not be done. Please try again.")
 
 
+# choices for the second left room
 def left2_room2():
   correctl2_choice1 = "check puddle"
   correctl2_choice2 = "throw up"
@@ -319,6 +330,7 @@ def left2_room2():
       print("That action could not be done. Please try again.")
 
 
+# intro for the right hallway
 def right_hallway():
   correctrh_choice = "check surroundings"
   while True:
@@ -337,6 +349,7 @@ def right_hallway():
       print("That action could not be done. Please try again.")
 
 
+# intro for the left hallway
 def left_hallway():
   correctlh_choice = "check surroundings"
   while True:
@@ -359,6 +372,7 @@ def left_hallway():
       print("That action could not be done. Please try again.")
 
 
+# choices for the right hallway
 def right_hallway1():
   correctrh_choice1 = "check note"
   correctrh_choice2 = "check right door"
@@ -401,6 +415,7 @@ def right_hallway1():
       print("That action could not be done. Please try again.")
 
 
+# choices for the left hallway
 def left_hallway1():
   correctlh_choice1 = "check note"
   correctlh_choice2 = "check right door"
@@ -445,6 +460,7 @@ def left_hallway1():
       print("That action could not be done. Please try again.")
 
 
+# intro for the first right room from the right hallway
 def r_right_room():
   rcorrectr_choice = "check surroundings"
   while True:
@@ -465,6 +481,7 @@ def r_right_room():
       print("That action could not be done. Please try again.")
 
 
+# intro for the first left room from the right hallway
 def l_right_room():
   lcorrectr_choice = "check surroundings"
   while True:
@@ -483,6 +500,7 @@ def l_right_room():
       print("That action could not be done. Please try again.")
 
 
+# intro for the first right room from the left hallway
 def r_left_room():
   rcorrectl_choice = "check surroundings"
   while True:
@@ -506,6 +524,7 @@ def r_left_room():
       print("That action could not be done. Please try again.")
 
 
+# intro for the first left room from the left hallway
 def l_left_room():
   lcorrectl_choice = "check surroundings"
   while True:
@@ -526,6 +545,7 @@ def l_left_room():
       print("That action could not be done. Please try again.")
 
 
+# choices for the first right room from the right hallway
 def r_right_room1():
   rcorrectr_choice1 = "play"
   rcorrectr_choice2 = "check bed"
@@ -576,6 +596,7 @@ def r_right_room1():
       print("That action could not be done. Please try again.")
 
 
+# choices for the first left room from the right hallway
 def l_right_room1():
   lcorrectr_choice1 = "check pond"
   lcorrectr_choice2 = "check bench"
@@ -601,6 +622,7 @@ def l_right_room1():
       print("That action could not be done. Please try again.")
 
 
+# choices for the first right room from the left hallway
 def r_left_room1():
   rcorrectl_choice1 = "check safe"
   rcorrectl_choice2 = "check door"
@@ -654,6 +676,7 @@ def r_left_room1():
       print("That action could not be done. Please try again.")
 
 
+# choices for the first left room from the left hallway
 def l_left_room1():
   lcorrectl_choice1 = "check bear"
   lcorrectl_choice2 = "check door"
@@ -683,6 +706,7 @@ def l_left_room1():
       print("That action could not be done. Please try again.")
 
 
+# intro for the second right room from the right hallway
 def r_right2_room():
   rcorrectr2_choice = "check surroundings"
   while True:
@@ -705,6 +729,7 @@ def r_right2_room():
       print("That action could not be done. Please try again.")
 
 
+# intro for the second left room from the right hallway
 def l_right2_room():
   lcorrectr2_choice = "check surroundings"
   while True:
@@ -727,6 +752,7 @@ def l_right2_room():
       print("That action could not be done. Please try again.")
 
 
+# intro for the second right room from the left hallway
 def r_left2_room():
   rcorrectl2_choice = "check surroundings"
   while True:
@@ -749,6 +775,7 @@ def r_left2_room():
       print("That action could not be done. Please try again.")
 
 
+# intro for the second left room from the left hallway
 def l_left2_room():
   lcorrectl2_choice = "check surroundings"
   while True:
@@ -767,6 +794,7 @@ def l_left2_room():
       print("That action could not be done. Please try again.")
 
 
+# choices for the second right room from the right hallway
 def r_right2_room2():
   rcorrectr2_choice1 = "check straightjacket"
   rcorrectr2_choice2 = "check door"
@@ -800,6 +828,7 @@ def r_right2_room2():
       print("That action could not be done. Please try again.")
 
 
+# choices for the second left room from the right hallway
 def l_right2_room2():
   lcorrectr2_choice1 = "check bird cage"
   lcorrectr2_choice2 = "check dog cage"
@@ -839,6 +868,7 @@ def l_right2_room2():
       print("That action could not be done. Please try again.")
 
 
+# choices for the second right room from the left hallway
 def r_left2_room2():
   rcorrectl2_choice1 = "check carcasses"
   rcorrectl2_choice2 = "check noise"
@@ -885,6 +915,7 @@ def r_left2_room2():
       print("That action could not be done. Please try again.")
 
 
+# choices for the second left room from the left hallway
 def l_left2_room2():
   lcorrectl2_choice1 = "check mirror"
   lcorrectl2_choice2 = "check door"
@@ -912,6 +943,7 @@ def l_left2_room2():
       print("That action could not be done. Please try again.")
 
 
+# intro for the final room
 def final_room():
   correctf_choice = "check surroundings"
   while True:
@@ -964,6 +996,7 @@ def final_room():
       print("That action could not be done. Please try again.")
 
 
+# choice for the final room
 def final_room1():
   correctf_choice1 = "check surroundings"
   while True:
@@ -1032,6 +1065,7 @@ def final_room1():
       print("That action could not be done. Please try again.")
 
 
+# choices for the good and bad ending
 def final_choice():
   bad_ending = "stay"
   good_ending = "leave"
@@ -1137,6 +1171,7 @@ def final_choice():
       print("That action could not be done. Please try again.")
 
 
+# displays the credits for the game
 def credits():
   time.sleep(6)
   print("Thank you for playing The Doors Through the Unknown by Hunter Simmers!")
@@ -1148,4 +1183,5 @@ def credits():
   print("It is your destiny!")
 
 
+# gets called and begins the plot of the game
 display_intro()
