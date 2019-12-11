@@ -595,6 +595,7 @@ def l_right_room1():
       print("You walk over to the park bench and sit down to think.")
       time.sleep(2)
       print("As you lean back in your seat, the whole bench leans back and sets a mechanism in motion that opens a passageway out of this room into yet another unfamiliar room.")
+      l_right2_room()
       break
     else:
       print("That action could not be done. Please try again.")
@@ -696,6 +697,27 @@ def r_right2_room():
       print("Everything is so bright that you feel like you might go insane.")
       time.sleep(2)
       print("Theres an empty straightjacket in the corner near a door that is thankfully, slightly open.")
+      break
+    else:
+      print("That action could not be done. Please try again.")
+
+
+def l_right2_room():
+  lcorrectr2_choice = "check surroundings"
+  while True:
+    rightchoicel2 = input("What will you do now?: ")
+    if rightchoicel2 == lcorrectr2_choice:
+      print("As you look around this new room you get a sense of nervousness that overcomes you.")
+      time.sleep(2)
+      print("This room is set up as a pet store with many different sections for various different animals.")
+      time.sleep(2)
+      print("The problem is though, all of the cages and pens are completely empty.")
+      time.sleep(2)
+      print("The whole room is awkwardly silent, very strange for a pet store.")
+      time.sleep(2)
+      print("There seems to be a few cages that are open, one being a bird cage, one for a dog, and one for a snake.")
+      time.sleep(2)
+      print("It also looks like the only door out of this room is a maintenance door behind the counter.")
       break
     else:
       print("That action could not be done. Please try again.")
