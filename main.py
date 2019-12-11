@@ -718,9 +718,10 @@ def l_right2_room():
       time.sleep(2)
       print("The whole room is awkwardly silent, very strange for a pet store.")
       time.sleep(2)
-      print("There seems to be a few cages that are open, one being a bird cage, one for a dog, and one for a snake.")
+      print("There seems to be a few cages and tanks that are open, one being a bird cage, one for a dog, and one for a snake.")
       time.sleep(2)
       print("It also looks like the only door out of this room is a maintenance door behind the counter.")
+      l_right2_room2()
       break
     else:
       print("That action could not be done. Please try again.")
@@ -791,6 +792,44 @@ def r_right2_room2():
       print("Walking on the padded floor is still difficult but you manage to reach your destination.")
       time.sleep(2)
       print("You push the heavy door open and step through the doorway.")
+      break
+    else:
+      print("That action could not be done. Please try again.")
+
+
+def l_right2_room2():
+  lcorrectr2_choice1 = "check bird cage"
+  lcorrectr2_choice2 = "check dog cage"
+  lcorrectr2_choice3 = "check snake tank"
+  lcorrectr2_choice4 = "check door"
+  while True:
+    rightchoicel3 = input("What do you do?: ")
+    if rightchoicel3 == lcorrectr2_choice1:
+      print("You walk over to the open bird cage in the left side of the store.")
+      time.sleep(2)
+      print("Nothing seems wrong or broken, just open for some reason.")
+      time.sleep(2)
+      print("There also seems to have never even held a bird in it before.")
+      time.sleep(2)
+      print("You close the cage and move along.")
+    elif rightchoicel3 == lcorrectr2_choice2:
+      print("You decide to check the open dog cage.")
+      time.sleep(2)
+      print("The cage seems small, it was either for a small breed dog or a young puppy.")
+      time.sleep(2)
+      print("The tought of a dog reminds you of your dog back home and it makes you smile.")
+      time.sleep(2)
+      print("You gently close the door to the cage and move on.")
+    elif rightchoicel3 == lcorrectr2_choice3:
+      print("You go over to the snake tank and you cautious look inside.")
+      time.sleep(2)
+      print("You are scared of snakes so you close the top of the tank and move on.")
+    elif rightchoicel3 == lcorrectr2_choice4:
+      print("You walk around the ominous, empty store until you get to the front counter.")
+      time.sleep(2)
+      print("You see the door behind the counter so you head towards it.")
+      time.sleep(2)
+      print("Luckily, the door out was unlocked so you open it and step through the doorway.")
       break
     else:
       print("That action could not be done. Please try again.")
