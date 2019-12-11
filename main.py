@@ -738,11 +738,12 @@ def r_left2_room():
       time.sleep(2)
       print("There is blood everywhere with cuts of meat lining all the surfaces in the room.")
       time.sleep(2)
-      print("Carcases line the walls, and it gives you a disgusted feeling.")
+      print("Carcasses line the walls, and it gives you a disgusted feeling.")
       time.sleep(2)
       print("You also find a rusty door behind a large table at the back of the room.")
       time.sleep(2)
-      print("All of a sudden you see one of the carcases swaying and you hear some metal clanging sounds behind a curtain.")
+      print("All of a sudden you see one of the carcasses swaying and you hear some metal clanging sounds behind a curtain.")
+      r_left2_room2()
       break
     else:
       print("That action could not be done. Please try again.")
@@ -830,6 +831,51 @@ def l_right2_room2():
       print("You see the door behind the counter so you head towards it.")
       time.sleep(2)
       print("Luckily, the door out was unlocked so you open it and step through the doorway.")
+      break
+    else:
+      print("That action could not be done. Please try again.")
+
+
+def r_left2_room2():
+  rcorrectl2_choice1 = "check carcasses"
+  rcorrectl2_choice2 = "check noise"
+  rcorrectl2_choice3 = "check door"
+  while True:
+    leftchoicer3 = input("What do you do?: ")
+    if leftchoicer3 == rcorrectl2_choice1:
+      print("You head towards one of the walls with the carcasses hanging up.")
+      time.sleep(2)
+      print("You do not get too close because one was moving but you do not see anything that could have moved it.")
+      time.sleep(2)
+      print("You take a step back after finally getting the smell.")
+      time.sleep(2)
+      print("It smells horrible so you cover your nose and walk away.")
+    elif leftchoicer3 == rcorrectl2_choice2:
+      print("You follow the sounds of the clanging, walking as slowly and as quietly as possible.")
+      time.sleep(2)
+      print("You do not want to alert whatever it is making the noise that you are drawing closer.")
+      time.sleep(2)
+      print("You reach in your back pocket for your new pocket knife in order to protect yourslef.")
+      time.sleep(2)
+      print("You reach the curtain and the noises are louder than ever.")
+      time.sleep(2)
+      print("You are super nervous and adrenaline is pumping through you.")
+      time.sleep(2)
+      print("With the knife in hand, you silently grab the curtain abd swing it open!")
+      time.sleep(2)
+      print("You find that the thing making the noises was a large rat running through tons of pots, pans, and other cooking utensils.")
+      time.sleep(2)
+      print("The rat hisses at you and scurries away.")
+      time.sleep(2)
+      print("You are left speechless.")
+      time.sleep(2)
+      print("You close the pocket knife and move on.")
+    elif leftchoicer3 == rcorrectl2_choice3:
+      print("You approach the heavy door at the back of the shop.")
+      time.sleep(2)
+      print("The hinges are very rusty and require a lot of force to move it.")
+      time.sleep(2)
+      print("After some time, you eventually open the door wide enough to slip through.")
       break
     else:
       print("That action could not be done. Please try again.")
