@@ -40,17 +40,17 @@ def room1_choice1():
       time.sleep(2)
       print("After shuffling through the mess, you find a rusty pocket knife.")
       time.sleep(2)
-      print("It is difficult to move but it is still sharp and may become useful")
+      print("It is difficult to move but it is still sharp and may become useful.")
       time.sleep(2)
       print("You think for a minute and end up taking the knife.")
       time.sleep(2)
-      print("You struggle to close the knife but eventually accomplish your task")
+      print("You struggle to close the knife but eventually accomplish your task.")
       time.sleep(2)
       print("You put the knife in your pocket just in case you may need it in the future.")
     elif choice1 == correct1_choice2:
       print("The door is very heavily secured and is unable to open.")
       time.sleep(2)
-      print("You are not getting out this way. Try something else")
+      print("You are not getting out this way. Try something else.")
     elif choice1 == correct1_choice3:
       print("You approach the door on the right wall. The door is considerably large and may take some force to move it.")
       time.sleep(2)
@@ -82,7 +82,7 @@ def right_room1():
   while True:
     choice2 = input("What will you do now?: ")
     if choice2 == correctr_choice:
-      print("You are in another strange room but this one is set up a little differently")
+      print("You are in another strange room but this one is set up a little differently.")
       time.sleep(2)
       print("When looking around you see a bucket in the left corner and a singular door straight ahead.")
       time.sleep(2)
@@ -119,7 +119,7 @@ def right1_room1():
   while True:
     rchoice1 = input("What are you going to do?: ")
     if rchoice1 == correctr_choice1:
-      print("You are unsure why a bucket is in here but it must be important")
+      print("You are unsure why a bucket is in here but it must be important.")
       time.sleep(2)
       print("You approach the lone bucket and look inside.")
       time.sleep(2)
@@ -692,7 +692,7 @@ def r_right2_room():
       time.sleep(2)
       print("The hole in the wall is pretty high up and you land right on your head because the fall was so quick and so sudden that you were unable to brace your fall with your hands.")
       time.sleep(2)
-      print("You land hard but your fall is easily absorbed by a very soft ground")
+      print("You land hard but your fall is easily absorbed by a very soft ground.")
       time.sleep(2)
       print("You are thankful that it broke your fall and you give a better look around and you see that you are in a white padded room like those found in an insane asylum.")
       time.sleep(2)
