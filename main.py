@@ -761,6 +761,7 @@ def l_left2_room():
       print("The whole room is empty except for the mirrors and a single door straight ahead of you.")
       time.sleep(2)
       print("Once again, you are very puzzled by the room you are in.")
+      l_left2_room2()
       break
     else:
       print("That action could not be done. Please try again.")
@@ -876,6 +877,32 @@ def r_left2_room2():
       print("The hinges are very rusty and require a lot of force to move it.")
       time.sleep(2)
       print("After some time, you eventually open the door wide enough to slip through.")
+      break
+    else:
+      print("That action could not be done. Please try again.")
+
+
+def l_left2_room2():
+  lcorrectl2_choice1 = "check mirror"
+  lcorrectl2_choice2 = "check door"
+  while True:
+    leftchoicel3 = input("What do you do?: ")
+    if leftchoicel3 == lcorrectl2_choice1:
+      print("You head towards one of the walls with the mirrors.")
+      time.sleep(2)
+      print("Of course all you see is your reflection.")
+      time.sleep(2)
+      print("You stand there for a moment just staring.")
+      time.sleep(2)
+      print("You get a grin on your face and start to flex and make funny faces.")
+      time.sleep(2)
+      print("You eventually get tired of this and decide to move on.")
+    elif leftchoicel3 == lcorrectl2_choice2:
+      print("You approach the door watching your reflection as you go along.")
+      time.sleep(2)
+      print("You reach the door and turn the handle.")
+      time.sleep(2)
+      print("You open the door, and not looking back.")
       break
     else:
       print("That action could not be done. Please try again.")
