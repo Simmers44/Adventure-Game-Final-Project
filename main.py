@@ -794,6 +794,7 @@ def r_right2_room2():
       print("Walking on the padded floor is still difficult but you manage to reach your destination.")
       time.sleep(2)
       print("You push the heavy door open and step through the doorway.")
+      final_room()
       break
     else:
       print("That action could not be done. Please try again.")
@@ -832,6 +833,7 @@ def l_right2_room2():
       print("You see the door behind the counter so you head towards it.")
       time.sleep(2)
       print("Luckily, the door out was unlocked so you open it and step through the doorway.")
+      final_room()
       break
     else:
       print("That action could not be done. Please try again.")
@@ -877,6 +879,7 @@ def r_left2_room2():
       print("The hinges are very rusty and require a lot of force to move it.")
       time.sleep(2)
       print("After some time, you eventually open the door wide enough to slip through.")
+      final_room()
       break
     else:
       print("That action could not be done. Please try again.")
@@ -903,6 +906,58 @@ def l_left2_room2():
       print("You reach the door and turn the handle.")
       time.sleep(2)
       print("You open the door, and not looking back.")
+      final_room()
+      break
+    else:
+      print("That action could not be done. Please try again.")
+
+
+def final_room():
+  correctf_choice = "check surroundings"
+  while True:
+    finalchoice1 = input("What are you going to do?: ")
+    if finalchoice1 == correctf_choice:
+      print("You find yourself in a long stretching hallway.")
+      time.sleep(2)
+      print("You can not possibly see the other end of this hallway and decide to venture down.")
+      time.sleep(2)
+      print("The walk is long and with no end in sight, you become weary with this whole strange adventure debacle.")
+      time.sleep(2)
+      print("You think back to what you went through to get to this point and you grow ever increasingly tired.")
+      time.sleep(2)
+      print("All you want to do is give up.")
+      time.sleep(2)
+      print("You want to just stop where you are, curl up in a ball, and cry.")
+      time.sleep(2)
+      print("All of the stress is finally getting to you and with this long walk all of the adrenaline has left your body.")
+      time.sleep(2)
+      print("It feels like you have been here for hours, possibly days.")
+      time.sleep(2)
+      print("You stop, still with no signs of the hallway ending, and just stand there.")
+      time.sleep(2)
+      print("Thinking.")
+      time.sleep(2)
+      print("Pondering.")
+      time.sleep(2)
+      print("Worrying.")
+      time.sleep(2)
+      print("But you make a fist, you furrow your brow, and keep going!")
+      time.sleep(2)
+      print("You think to yourself, believing that this has to be the end and you push on, harder and more determined than ever before!")
+      time.sleep(2)
+      print("The hallway stretches farther and farther, going up and down, left and right, seemingly in no particular reason.")
+      time.sleep(2)
+      print("As you press on, words start to appear on the walls.")
+      time.sleep(2)
+      print("'You are almost there!'")
+      time.sleep(2)
+      print("'Face your destiny!'")
+      time.sleep(2)
+      print("After what seemed like hours of running, you reach the end.")
+      time.sleep(2)
+      print("Now the only thing that stands in your way is a single door with the words, 'Game Warden' written on it.")
+      time.sleep(2)
+      print("Without hesitation, you swing the door open with an agressive might and charge in!")
       break
     else:
       print("That action could not be done. Please try again.")
