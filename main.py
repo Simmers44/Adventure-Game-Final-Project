@@ -676,7 +676,8 @@ def l_left_room1():
       time.sleep(2)
       print("Extremely scared, you sprint through the door, slamming it behind you.")
       time.sleep(2)
-      print("you once again find yourself in a new room.")
+      print("You once again find yourself in a new room.")
+      l_left2_room()
       break
     else:
       print("That action could not be done. Please try again.")
@@ -740,6 +741,23 @@ def r_left2_room():
       print("You also find a rusty door behind a large table at the back of the room.")
       time.sleep(2)
       print("All of a sudden you see one of the carcases swaying and you hear some metal clanging sounds behind a curtain.")
+      break
+    else:
+      print("That action could not be done. Please try again.")
+
+
+def l_left2_room():
+  lcorrectl2_choice = "check surroundings"
+  while True:
+    leftchoicel2 = input("What will you do now?: ")
+    if leftchoicel2 == lcorrectl2_choice:
+      print("Turning around and catching your breath, you begin to look around this new environment.")
+      time.sleep(2)
+      print("The walls of the room is lined with mirrors spanning from top to bottom.")
+      time.sleep(2)
+      print("The whole room is empty except for the mirrors and a single door straight ahead of you.")
+      time.sleep(2)
+      print("Once again, you are very puzzled by the room you are in.")
       break
     else:
       print("That action could not be done. Please try again.")
