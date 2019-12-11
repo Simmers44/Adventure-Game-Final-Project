@@ -1054,7 +1054,7 @@ def final_choice():
       time.sleep(2)
       print("You spin around, facing the monitors.")
       time.sleep(2)
-      print("You look down to see a list of names of possible candidates for the master plan")
+      print("You look down to see a list of names of possible candidates for the master plan.")
       time.sleep(2)
       print("You decide to start the testing immediately.")
       time.sleep(2)
@@ -1063,6 +1063,7 @@ def final_choice():
       print("You smile and wisper to yourself...")
       time.sleep(2)
       print("'Long live the Game Warden...'")
+      credits()
       break
     elif endingchoice == good_ending:
       print("You stand there completely frozen in shock and awe.")
@@ -1130,9 +1131,21 @@ def final_choice():
       print("'No...'")
       time.sleep(2)
       print("'Screw destiny...'")
+      credits()
       break
     else:
       print("That action could not be done. Please try again.")
+
+
+def credits():
+  time.sleep(6)
+  print("Thank you for playing The Doors Through the Unknown by Hunter Simmers!")
+  time.sleep(2)
+  print("Play again to find different paths and options as well as a different ending!")
+  time.sleep(2)
+  print("Can you find all of the differnt possibilities?")
+  time.sleep(2)
+  print("It is your destiny!")
 
 
 display_intro()
