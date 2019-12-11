@@ -648,6 +648,7 @@ def r_left_room1():
       print("You eventually pull yourself up to the top, looking at the ladder as it crashes in pieces as it hits the ground.")
       time.sleep(2)
       print("You calm yourself down and walk through the door into another room.")
+      r_left2_room()
       break
     else:
       print("That action could not be done. Please try again.")
@@ -718,6 +719,27 @@ def l_right2_room():
       print("There seems to be a few cages that are open, one being a bird cage, one for a dog, and one for a snake.")
       time.sleep(2)
       print("It also looks like the only door out of this room is a maintenance door behind the counter.")
+      break
+    else:
+      print("That action could not be done. Please try again.")
+
+
+def r_left2_room():
+  rcorrectl2_choice = "check surroundings"
+  while True:
+    leftchoicer2 = input("What will you do now?: ")
+    if leftchoicer2 == rcorrectl2_choice:
+      print("Now inside the next room, you are taken aback.")
+      time.sleep(2)
+      print("You are in a butcher shop!")
+      time.sleep(2)
+      print("There is blood everywhere with cuts of meat lining all the surfaces in the room.")
+      time.sleep(2)
+      print("Carcases line the walls, and it gives you a disgusted feeling.")
+      time.sleep(2)
+      print("You also find a rusty door behind a large table at the back of the room.")
+      time.sleep(2)
+      print("All of a sudden you see one of the carcases swaying and you hear some metal clanging sounds behind a curtain.")
       break
     else:
       print("That action could not be done. Please try again.")
