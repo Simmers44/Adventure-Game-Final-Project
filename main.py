@@ -7,12 +7,25 @@ print("Hello,", name, "let's begin. . .")
 
 # displays the introduction for the beginning room
 def display_intro():
+  """
+  This function when called begins the plot and contains a print statement that describes the first environment the player finds themselves in.
+  At the end, the intro to the beginning room is called.
+  """
   print(name,", you awake in an unfamiliar room with seemingly random objects strewn about the small room around you.")
   intro_choice()
 
 
 # the intro to the beginning room
 def intro_choice():
+  """
+  This function when called allows the player to input a command that, when recognized, will enact that request.
+  The function will then print out a scenario, describing what happens when a certain input is given.
+  The function will also provide an error message if the input given is not recognized.
+  The function will repeatedly ask for an input if either the input given is unrecognized or the input given does not advance the plot significantly.
+  At the end, the choices for the beginning room is called.
+  Options for inputs include:
+    check surroundings
+  """
   correct_choice = "check surroundings"
   while True:
     introchoice = input("What do you do?: ")
@@ -32,6 +45,20 @@ def intro_choice():
 
 # the choices for the beginning room
 def room1_choice1():
+  """
+  This function when called allows the player to input a command that, when recognized, will enact that request.
+  The function will then print out a scenario, describing what happens when a certain input is given.
+  The function will also provide an error message if the input given is not recognized.
+  The function will repeatedly ask for an input if either the input given is unrecognized or the input given does not advance the plot significantly.
+  This choice will decide the direction the player goes down in the first branching pathway.
+  At the end of the check right door path, the intro for the first right room is called.
+  At the end of the check left door path, the intro for the first left room is called.
+  Options for inputs include:
+    check door
+    check back door
+    check right door
+    check left door
+  """
   correct1_choice1 = "check desk"
   correct1_choice2 = "check back door"
   correct1_choice3 = "check right door"
@@ -82,6 +109,15 @@ def room1_choice1():
 
 # intro for the first right room
 def right_room1():
+  """
+  This function when called allows the player to input a command that, when recognized, will enact that request.
+  The function will then print out a scenario, describing what happens when a certain input is given.
+  The function will also provide an error message if the input given is not recognized.
+  The function will repeatedly ask for an input if either the input given is unrecognized or the input given does not advance the plot significantly.
+  At the end, the choices for the first right room is called.
+  Options for inputs include:
+    check surroundings
+  """
   correctr_choice = "check surroundings"
   while True:
     choice2 = input("What will you do now?: ")
@@ -99,6 +135,15 @@ def right_room1():
 
 #intro for the first left room
 def left_room1():
+  """
+  This function when called allows the player to input a command that, when recognized, will enact that request.
+  The function will then print out a scenario, describing what happens when a certain input is given.
+  The function will also provide an error message if the input given is not recognized.
+  The function will repeatedly ask for an input if either the input given is unrecognized or the input given does not advance the plot significantly.
+  At the end, the choices for the first left room is called.
+  Options for inputs include:
+    check surroundings
+  """
   correctl_choice = "check surroundings"
   while True:
     choice3 = input("What will you do now?: ")
@@ -120,6 +165,16 @@ def left_room1():
 
 # the choices for the first right room
 def right1_room1():
+  """
+  This function when called allows the player to input a command that, when recognized, will enact that request.
+  The function will then print out a scenario, describing what happens when a certain input is given.
+  The function will also provide an error message if the input given is not recognized.
+  The function will repeatedly ask for an input if either the input given is unrecognized or the input given does not advance the plot significantly.
+  At the end, the intro for the second right room is called.
+  Options for inputs include:
+    check bucket
+    check door
+  """
   correctr_choice1 = "check bucket"
   correctr_choice2 = "check door"
   while True:
@@ -148,6 +203,17 @@ def right1_room1():
 
 # the choices for the first left room
 def left1_room1():
+  """
+  This function when called allows the player to input a command that, when recognized, will enact that request.
+  The function will then print out a scenario, describing what happens when a certain input is given.
+  The function will also provide an error message if the input given is not recognized.
+  The function will repeatedly ask for an input if either the input given is unrecognized or the input given does not advance the plot significantly.
+  At the end, the intro for the second left room is called.
+  Options for inputs include:
+    check trash
+    check chair
+    check door
+  """
   correctl_choice1 = "check trash"
   correctl_choice2 = "check chair"
   correctl_choice3 = "check door"
@@ -193,6 +259,15 @@ def left1_room1():
 
 # intro for the second right room
 def right_room2():
+  """
+  This function when called allows the player to input a command that, when recognized, will enact that request.
+  The function will then print out a scenario, describing what happens when a certain input is given.
+  The function will also provide an error message if the input given is not recognized.
+  The function will repeatedly ask for an input if either the input given is unrecognized or the input given does not advance the plot significantly.
+  At the end, the choices for the second right room is called.
+  Options for inputs include:
+    check surroundings
+  """
   correctr2_choice = "check surroundings"
   while True:
     rchoice4 = input("What will you do now?: ")
@@ -212,6 +287,15 @@ def right_room2():
 
 # intro for the second left room
 def left_room2():
+  """
+  This function when called allows the player to input a command that, when recognized, will enact that request.
+  The function will then print out a scenario, describing what happens when a certain input is given.
+  The function will also provide an error message if the input given is not recognized.
+  The function will repeatedly ask for an input if either the input given is unrecognized or the input given does not advance the plot significantly.
+  At the end, the choices for the second left room is called.
+  Options for inputs include:
+    check surroundings
+  """
   correctl2_choice = "check surroundings"
   while True:
     lchoice2 = input("What will you do now?: ")
@@ -235,6 +319,18 @@ def left_room2():
 
 # choices for the second right room
 def right2_room2():
+  """
+  This function when called allows the player to input a command that, when recognized, will enact that request.
+  The function will then print out a scenario, describing what happens when a certain input is given.
+  The function will also provide an error message if the input given is not recognized.
+  The function will repeatedly ask for an input if either the input given is unrecognized or the input given does not advance the plot significantly.
+  At the end, the intro for the right hallway is called.
+  Options for inputs include:
+    check bed
+    check tv
+    check lights
+    check bathroom
+  """
   correctr2_choice1 = "check bed"
   correctr2_choice2 = "check tv"
   correctr2_choice3 = "check lights"
@@ -285,6 +381,17 @@ def right2_room2():
 
 # choices for the second left room
 def left2_room2():
+  """
+  This function when called allows the player to input a command that, when recognized, will enact that request.
+  The function will then print out a scenario, describing what happens when a certain input is given.
+  The function will also provide an error message if the input given is not recognized.
+  The function will repeatedly ask for an input if either the input given is unrecognized or the input given does not advance the plot significantly.
+  At the end, the intro for the left hallway is called.
+  Options for inputs include:
+    check puddle
+    throw up
+    check toilet
+  """
   correctl2_choice1 = "check puddle"
   correctl2_choice2 = "throw up"
   correctl2_choice3 = "check toilet"
@@ -332,6 +439,15 @@ def left2_room2():
 
 # intro for the right hallway
 def right_hallway():
+  """
+  This function when called allows the player to input a command that, when recognized, will enact that request.
+  The function will then print out a scenario, describing what happens when a certain input is given.
+  The function will also provide an error message if the input given is not recognized.
+  The function will repeatedly ask for an input if either the input given is unrecognized or the input given does not advance the plot significantly.
+  At the end, the choices for the right hallway is called.
+  Options for inputs include:
+    check surroundings
+  """
   correctrh_choice = "check surroundings"
   while True:
     rhallway = input("What will you do?: ")
@@ -351,6 +467,15 @@ def right_hallway():
 
 # intro for the left hallway
 def left_hallway():
+  """
+  This function when called allows the player to input a command that, when recognized, will enact that request.
+  The function will then print out a scenario, describing what happens when a certain input is given.
+  The function will also provide an error message if the input given is not recognized.
+  The function will repeatedly ask for an input if either the input given is unrecognized or the input given does not advance the plot significantly.
+  At the end, the choices for the left hallway is called.
+  Options for inputs include:
+    check surroundings
+  """
   correctlh_choice = "check surroundings"
   while True:
     lhallway = input("What will you do?: ")
@@ -374,6 +499,19 @@ def left_hallway():
 
 # choices for the right hallway
 def right_hallway1():
+  """
+  This function when called allows the player to input a command that, when recognized, will enact that request.
+  The function will then print out a scenario, describing what happens when a certain input is given.
+  The function will also provide an error message if the input given is not recognized.
+  The function will repeatedly ask for an input if either the input given is unrecognized or the input given does not advance the plot significantly.
+  This choice will decide the direction the player goes down in the second branching pathway.
+  At the end of the check right door path, the intro for the first right room from the right hallway is called.
+  At the end of the check left door path, the intro for the first left room from the right hallway is called.
+  Options for inputs include:
+    check note
+    check right door
+    check left door
+  """
   correctrh_choice1 = "check note"
   correctrh_choice2 = "check right door"
   correctrh_choice3 = "check left door"
@@ -417,6 +555,19 @@ def right_hallway1():
 
 # choices for the left hallway
 def left_hallway1():
+  """
+  This function when called allows the player to input a command that, when recognized, will enact that request.
+  The function will then print out a scenario, describing what happens when a certain input is given.
+  The function will also provide an error message if the input given is not recognized.
+  The function will repeatedly ask for an input if either the input given is unrecognized or the input given does not advance the plot significantly.
+  This choice will decide the direction the player goes down in the second branching pathway.
+  At the end of the check right door path, the intro for the first right door from the left hallway is called.
+  At the end of the check left door path, the intro for the first left door from the left hallway is called.
+  Options for inputs include:
+    check note
+    check right door
+    check left door
+  """
   correctlh_choice1 = "check note"
   correctlh_choice2 = "check right door"
   correctlh_choice3 = "check left door"
@@ -462,6 +613,15 @@ def left_hallway1():
 
 # intro for the first right room from the right hallway
 def r_right_room():
+  """
+  This function when called allows the player to input a command that, when recognized, will enact that request.
+  The function will then print out a scenario, describing what happens when a certain input is given.
+  The function will also provide an error message if the input given is not recognized.
+  The function will repeatedly ask for an input if either the input given is unrecognized or the input given does not advance the plot significantly.
+  At the end, the choices for the first right door from the right hallway is called.
+  Options for inputs include:
+    check surroundings
+  """
   rcorrectr_choice = "check surroundings"
   while True:
     rightchoicer = input("What do you do?: ")
@@ -483,6 +643,15 @@ def r_right_room():
 
 # intro for the first left room from the right hallway
 def l_right_room():
+  """
+  This function when called allows the player to input a command that, when recognized, will enact that request.
+  The function will then print out a scenario, describing what happens when a certain input is given.
+  The function will also provide an error message if the input given is not recognized.
+  The function will repeatedly ask for an input if either the input given is unrecognized or the input given does not advance the plot significantly.
+  At the end, the choices for the first left room from the right hallway is called.
+  Options for inputs include:
+    check surroundings
+  """
   lcorrectr_choice = "check surroundings"
   while True:
     rightchoicel = input("What do you do?: ")
@@ -502,6 +671,15 @@ def l_right_room():
 
 # intro for the first right room from the left hallway
 def r_left_room():
+  """
+  This function when called allows the player to input a command that, when recognized, will enact that request.
+  The function will then print out a scenario, describing what happens when a certain input is given.
+  The function will also provide an error message if the input given is not recognized.
+  The function will repeatedly ask for an input if either the input given is unrecognized or the input given does not advance the plot significantly.
+  At the end, the choices for the first right room from the left hallway is called.
+  Options for inputs include:
+    check surroundings
+  """
   rcorrectl_choice = "check surroundings"
   while True:
     leftchoicer = input("What do you do?: ")
@@ -526,6 +704,15 @@ def r_left_room():
 
 # intro for the first left room from the left hallway
 def l_left_room():
+  """
+  This function when called allows the player to input a command that, when recognized, will enact that request.
+  The function will then print out a scenario, describing what happens when a certain input is given.
+  The function will also provide an error message if the input given is not recognized.
+  The function will repeatedly ask for an input if either the input given is unrecognized or the input given does not advance the plot significantly.
+  At the end, the choices for the first left room from the left hallway is called.
+  Options for inputs include:
+    check surroundings
+  """
   lcorrectl_choice = "check surroundings"
   while True:
     leftchoicel = input("What do you do?: ")
@@ -547,6 +734,17 @@ def l_left_room():
 
 # choices for the first right room from the right hallway
 def r_right_room1():
+  """
+  This function when called allows the player to input a command that, when recognized, will enact that request.
+  The function will then print out a scenario, describing what happens when a certain input is given.
+  The function will also provide an error message if the input given is not recognized.
+  The function will repeatedly ask for an input if either the input given is unrecognized or the input given does not advance the plot significantly.
+  At the end, the intro for the second right room from the right hallway is called.
+  Options for inputs include:
+    play
+    check bed
+    check poster
+  """
   rcorrectr_choice1 = "play"
   rcorrectr_choice2 = "check bed"
   rcorrectr_choice3 = "check poster"
@@ -598,6 +796,16 @@ def r_right_room1():
 
 # choices for the first left room from the right hallway
 def l_right_room1():
+  """
+  This function when called allows the player to input a command that, when recognized, will enact that request.
+  The function will then print out a scenario, describing what happens when a certain input is given.
+  The function will also provide an error message if the input given is not recognized.
+  The function will repeatedly ask for an input if either the input given is unrecognized or the input given does not advance the plot significantly.
+  At the end, the intro for the second left room from the right hallway is called.
+  Options for inputs include:
+    check pond
+    check bench
+  """
   lcorrectr_choice1 = "check pond"
   lcorrectr_choice2 = "check bench"
   while True:
@@ -624,6 +832,16 @@ def l_right_room1():
 
 # choices for the first right room from the left hallway
 def r_left_room1():
+  """
+  This function when called allows the player to input a command that, when recognized, will enact that request.
+  The function will then print out a scenario, describing what happens when a certain input is given.
+  The function will also provide an error message if the input given is not recognized.
+  The function will repeatedly ask for an input if either the input given is unrecognized or the input given does not advance the plot significantly.
+  At the end, the intro for the second right room from the left hallway is called.
+  Options for inputs include:
+    check safe
+    check door
+  """
   rcorrectl_choice1 = "check safe"
   rcorrectl_choice2 = "check door"
   while True:
@@ -678,6 +896,16 @@ def r_left_room1():
 
 # choices for the first left room from the left hallway
 def l_left_room1():
+  """
+  This function when called allows the player to input a command that, when recognized, will enact that request.
+  The function will then print out a scenario, describing what happens when a certain input is given.
+  The function will also provide an error message if the input given is not recognized.
+  The function will repeatedly ask for an input if either the input given is unrecognized or the input given does not advance the plot significantly.
+  At the end, the intro for the second left room from the left hallway is called.
+  Options for inputs include:
+    check bear
+    check door
+  """
   lcorrectl_choice1 = "check bear"
   lcorrectl_choice2 = "check door"
   while True:
@@ -708,6 +936,15 @@ def l_left_room1():
 
 # intro for the second right room from the right hallway
 def r_right2_room():
+  """
+  This function when called allows the player to input a command that, when recognized, will enact that request.
+  The function will then print out a scenario, describing what happens when a certain input is given.
+  The function will also provide an error message if the input given is not recognized.
+  The function will repeatedly ask for an input if either the input given is unrecognized or the input given does not advance the plot significantly.
+  At the end, the choices for the second right room from the right hallway is called.
+  Options for inputs include:
+    check surroundings
+  """
   rcorrectr2_choice = "check surroundings"
   while True:
     rightchoicer2 = input("What will you do now?: ")
@@ -731,6 +968,15 @@ def r_right2_room():
 
 # intro for the second left room from the right hallway
 def l_right2_room():
+  """
+  This function when called allows the player to input a command that, when recognized, will enact that request.
+  The function will then print out a scenario, describing what happens when a certain input is given.
+  The function will also provide an error message if the input given is not recognized.
+  The function will repeatedly ask for an input if either the input given is unrecognized or the input given does not advance the plot significantly.
+  At the end, the choices for the second left room from the right hallway is called.
+  Options for inputs include:
+    check surroundings
+  """
   lcorrectr2_choice = "check surroundings"
   while True:
     rightchoicel2 = input("What will you do now?: ")
@@ -754,6 +1000,15 @@ def l_right2_room():
 
 # intro for the second right room from the left hallway
 def r_left2_room():
+  """
+  This function when called allows the player to input a command that, when recognized, will enact that request.
+  The function will then print out a scenario, describing what happens when a certain input is given.
+  The function will also provide an error message if the input given is not recognized.
+  The function will repeatedly ask for an input if either the input given is unrecognized or the input given does not advance the plot significantly.
+  At the end, the choices for the second right room from the left hallway is called.
+  Options for inputs include:
+    check surroundings
+  """
   rcorrectl2_choice = "check surroundings"
   while True:
     leftchoicer2 = input("What will you do now?: ")
@@ -777,6 +1032,15 @@ def r_left2_room():
 
 # intro for the second left room from the left hallway
 def l_left2_room():
+  """
+  This function when called allows the player to input a command that, when recognized, will enact that request.
+  The function will then print out a scenario, describing what happens when a certain input is given.
+  The function will also provide an error message if the input given is not recognized.
+  The function will repeatedly ask for an input if either the input given is unrecognized or the input given does not advance the plot significantly.
+  At the end, the choices for the second left room from the left hallway is called.
+  Options for inputs include:
+    check surroundings
+  """
   lcorrectl2_choice = "check surroundings"
   while True:
     leftchoicel2 = input("What will you do now?: ")
@@ -796,6 +1060,16 @@ def l_left2_room():
 
 # choices for the second right room from the right hallway
 def r_right2_room2():
+  """
+  This function when called allows the player to input a command that, when recognized, will enact that request.
+  The function will then print out a scenario, describing what happens when a certain input is given.
+  The function will also provide an error message if the input given is not recognized.
+  The function will repeatedly ask for an input if either the input given is unrecognized or the input given does not advance the plot significantly.
+  At the end, the intro for the final room is called.
+  Options for inputs include:
+    check straightjacket
+    check door
+  """
   rcorrectr2_choice1 = "check straightjacket"
   rcorrectr2_choice2 = "check door"
   while True:
@@ -830,6 +1104,18 @@ def r_right2_room2():
 
 # choices for the second left room from the right hallway
 def l_right2_room2():
+  """
+  This function when called allows the player to input a command that, when recognized, will enact that request.
+  The function will then print out a scenario, describing what happens when a certain input is given.
+  The function will also provide an error message if the input given is not recognized.
+  The function will repeatedly ask for an input if either the input given is unrecognized or the input given does not advance the plot significantly.
+  At the end, the intro for the final room is called.
+  Options for inputs include:
+    check bird cage
+    check dog cage
+    check snake tank
+    check door
+  """
   lcorrectr2_choice1 = "check bird cage"
   lcorrectr2_choice2 = "check dog cage"
   lcorrectr2_choice3 = "check snake tank"
@@ -870,6 +1156,17 @@ def l_right2_room2():
 
 # choices for the second right room from the left hallway
 def r_left2_room2():
+  """
+  This function when called allows the player to input a command that, when recognized, will enact that request.
+  The function will then print out a scenario, describing what happens when a certain input is given.
+  The function will also provide an error message if the input given is not recognized.
+  The function will repeatedly ask for an input if either the input given is unrecognized or the input given does not advance the plot significantly.
+  At the end, the intro for the final room is called.
+  Options for inputs include:
+    check carcasses
+    check noise
+    check door
+  """
   rcorrectl2_choice1 = "check carcasses"
   rcorrectl2_choice2 = "check noise"
   rcorrectl2_choice3 = "check door"
@@ -917,6 +1214,16 @@ def r_left2_room2():
 
 # choices for the second left room from the left hallway
 def l_left2_room2():
+  """
+  This function when called allows the player to input a command that, when recognized, will enact that request.
+  The function will then print out a scenario, describing what happens when a certain input is given.
+  The function will also provide an error message if the input given is not recognized.
+  The function will repeatedly ask for an input if either the input given is unrecognized or the input given does not advance the plot significantly.
+  At the end, the intro for the final room is called.
+  Options for inputs include:
+    check mirror
+    check door
+  """
   lcorrectl2_choice1 = "check mirror"
   lcorrectl2_choice2 = "check door"
   while True:
@@ -945,6 +1252,15 @@ def l_left2_room2():
 
 # intro for the final room
 def final_room():
+  """
+  This function when called allows the player to input a command that, when recognized, will enact that request.
+  The function will then print out a scenario, describing what happens when a certain input is given.
+  The function will also provide an error message if the input given is not recognized.
+  The function will repeatedly ask for an input if either the input given is unrecognized or the input given does not advance the plot significantly.
+  At the end, the choice for the final room is called.
+  Options for inputs include:
+    check surroundings
+  """
   correctf_choice = "check surroundings"
   while True:
     finalchoice1 = input("What are you going to do?: ")
@@ -998,6 +1314,15 @@ def final_room():
 
 # choice for the final room
 def final_room1():
+  """
+  This function when called allows the player to input a command that, when recognized, will enact that request.
+  The function will then print out a scenario, describing what happens when a certain input is given.
+  The function will also provide an error message if the input given is not recognized.
+  The function will repeatedly ask for an input if either the input given is unrecognized or the input given does not advance the plot significantly.
+  At the end, the final choice is called.
+  Options for inputs include:
+    check surroundings
+  """
   correctf_choice1 = "check surroundings"
   while True:
     finalchoice2 = input("What will you do?: ")
@@ -1067,6 +1392,17 @@ def final_room1():
 
 # choices for the good and bad ending
 def final_choice():
+  """
+  This function when called allows the player to input a command that, when recognized, will enact that request.
+  The function will then print out a scenario, describing what happens when a certain input is given.
+  The function will also provide an error message if the input given is not recognized.
+  The function will repeatedly ask for an input if either the input given is unrecognized or the input given does not advance the plot significantly.
+  This choice decides the ending that the player will get.
+  At the end of both paths, the credits are called.
+  Options for inputs include:
+    stay
+    leave
+  """
   bad_ending = "stay"
   good_ending = "leave"
   while True:
@@ -1173,6 +1509,9 @@ def final_choice():
 
 # displays the credits for the game
 def credits():
+  """
+  This function when called will display the credits of the game with simple print statements.
+  """
   time.sleep(6)
   print("Thank you for playing The Doors Through the Unknown by Hunter Simmers!")
   time.sleep(2)
