@@ -1,5 +1,6 @@
 import time
 
+
 # name variable for the player's name
 name = input("Welcome to The Doors Through the Unknown! Please input your name: ")
 print("Hello,", name, "let's begin. . .")
@@ -1511,8 +1512,11 @@ def final_choice():
 def credits():
   """
   This function when called will display the credits of the game with simple print statements.
+  Informs the player of different decisions, paths, and endings.
   """
-  time.sleep(6)
+  time.sleep(5)
+  print("THE END")
+  time.sleep(2)
   print("Thank you for playing The Doors Through the Unknown by Hunter Simmers!")
   time.sleep(2)
   print("Play again to find different paths and options as well as a different ending!")
